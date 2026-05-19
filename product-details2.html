@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistrot Instinct</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<!--Fav-icon------------------------------>
+<link rel="shortcut icon" href="images/fav-icon.png"/>
+<!--poppins-font-family------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/food_logo1_2.png" width="100px" alt="logo"/></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Places</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" alt="menu" onclick="menutoggle()">
+        </div>
+        
+    </div>
+
+    <!-- ----- single product details ------- -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/bistrot-instinct.avif" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/bistrot-instinct.avif" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/bistrot-instinct2.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/bistrot-instinct3.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/bistrot-instinct4.jpg" width="100%" alt="" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Place</p>
+                <h1>Bistrot Instinct</h1>
+                <h4>In France, Paris</h4>
+                <h3 class="place-description">Description <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Follow your “instinct”: this pocket handkerchief contemporary bistro, complete with a mezzanine, is in the hands of chef Maximilian Wollek and his enth...</p>
+                
+                    <div class="rating-details">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o" aria-hidden="true"></i>
+                    </div>
+            </div>
+        
+            
+        </div>
+    </div>
+
+    <!--- Dishes ---->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Dishes You Can Find</h2>
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/restaurant_2_food1.jpg" alt="">
+                <h4 class="food-title">Baguette</h4>
+                <p class="food-title">Recommended <i class="fa fa-thumbs-up" aria-hidden="true"></i></p>
+            </div>
+            <div class="col-4">
+                <img src="images/french_onion_soup.webp" alt="">
+                <h4 class="food-title">French Onion Soup</h4>
+                <p class="food-title">Recommended <i class="fa fa-thumbs-up" aria-hidden="true"></i></p>
+            </div>
+            <div class="col-4">
+                <img src="images/filet.jpg" alt="">
+                <h4 class="food-title">Filet de Turbot</h4>
+                
+            </div>
+            <div class="col-4">
+                <img src="images/filet-de-boeuf.jpg" alt="">
+                <h4 class="food-title">Filet de Bœuf Chateaubirand</h4>
+                
+            </div>
+            
+
+        </div>
+        
+    </div>
+
+    <!--- Location ---->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Location</h2>
+        </div>
+    </div>
+
+    <section class="location small-location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.710914955737!2d2.360013975731363!3d48.863722700332204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66faa32787fcd%3A0x375b2fb6cd6dcfef!2sBistrot%20Instinct!5e0!3m2!1sen!2sid!4v1697807850539!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!--- Reviews ---->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Reviews</h2>
+        </div>
+    </div>
+
+
+        <!--Testimonials------------------->
+        <section id="testimonials">
+            <!--testimonials-box-container------>
+            <div class="testimonial-box-container">
+                <!--BOX-1-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="images/review_4.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Touseeq Ijaz</strong>
+                                <span>@touseeqijazweb</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-2-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="images/review_3.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>J.K Rowling</strong>
+                                <span>@jkrowling</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-3-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="images/review_2.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Harry Potter</strong>
+                                <span>@DanielRedclief</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+                <!--BOX-4-------------->
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                            <div class="profile-img">
+                                <img src="images/review_1.png" />
+                            </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Oliva</strong>
+                                <span>@Olivaadward</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                    </div>
+                </div>
+            </div>
+            <span class="input-container">
+            <input type="text" placeholder="Add a review" class="review-input" />
+            <span class="send-button"><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+            </span>
+        </section>
+
+
+
+    <!-- ------- title ------- -->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Places</h2>
+                <p>View More</p>
+            </div>
+        </div>
+
+    <!-- ------- products ------ -->
+
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/restaurant_5.jpg" alt="">
+                <h4>Es Teler 77</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>Indonesia, Jakarta</p>
+            </div>
+            <div class="col-4">
+                <img src="images/restaurant_6_2.png" alt="">
+                <h4>Trattoria Pennestri</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p>Italy, Rome</p>
+            </div>
+            <div class="col-4">
+                <img src="images/restaurant_7.jpg" alt="">
+                <h4>Attica</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>Australia, Melbourne</p>
+            </div>
+            <div class="col-4">
+                <img src="images/restaurant_8.jpg" alt="">
+                <h4>Hofbräuhaus München</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>Germany, Bavaria</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <!---- Footer ----->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/food_logo2.png" alt="">
+                    <p>Our Goal Is To Give Our Customer A New Experience</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul class="follow-us">
+                        <li>Facebook<i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                        <li>Twitter<i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li>Instagram<i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li>YouTube<i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 -  Edwur </p>
+        </div>
+    </div>
+    <!-- JS for toggle menu -->
+    <script src="script.js"></script>
+
+    <!-- js for product gallery -->
+    <script>
+        let ProductImg = document.getElementById("ProductImg");
+        let SmallImg = document.getElementsByClassName("small-img"); //an array
+
+        SmallImg[0].onclick = function() {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function() {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function() {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function() {
+            ProductImg.src = SmallImg[3].src;
+        }
+
+    </script>
+    
+</body>
+</html>

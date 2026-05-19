@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Places - Wander </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<!--Fav-icon------------------------------>
+<link rel="shortcut icon" href="images/fav-icon.png"/>
+<!--poppins-font-family------------------->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/food_logo1_2.png" width="100px" alt="logo"/></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Places</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" alt="menu" onclick="menutoggle()">
+        </div>
+        
+    </div>
+
+    <div class="small-container search-container">
+        <div class="wrap">
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="Search...">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Recommended Places <i class="fa fa-thumbs-up" aria-hidden="true"></i></h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+                <option>Sort by newest</option>
+                <option>Sort by authenticity</option>
+                <option>Sort by budget</option>
+            </select>
+        </div>
+        
+        <div class="row row22">
+            <div class="col-4">
+                <div class="layer-container">
+                    <a href="product-details.html"><img src="images/cedros-tokyo.jpg" alt=""></a>
+                    <a href="product-details.html"><div class="layer">
+                        <p>Eat the finest sushi and beef tartare in this fancy restaurant!</p>
+                    </div></a>
+                </div>
+                <a href="product-details.html"><h4 class="place-name">Cedros Tokyo</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Japan, Tokyo</p>
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <a href="product-details2.html"><img src="images/bistrot-instinct.avif" alt=""></a>
+                    <a href="product-details2.html"><div class="layer">
+                        <p>Get the best dining experience while watching the Eiffel Tower!</p>
+                    </div></a>
+                </div>
+                
+                <a href="product-details2.html"><h4 class="place-name">Bistrot Instinct</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <!-- <p class="place-location" style="display: none">Eiffel Tower</p> -->
+                <p class="place-location">France, Paris</p>
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <a href="product-details3.html"><img src="images/restaurant_3.jpg" alt=""></a>
+                    <a href="product-details3.html"><div class="layer">
+                        <p>Taste the unique delicacy of kalguksu and mandu in Seoul!</p>
+                    </div></a>
+                </div>
+                
+                <a href="product-details3.html"><h4 class="place-name">Hwangsaengga Kalguksu</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Korea, Seoul</p>
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <a href="product-details4.html"><img src="images/restaurant_4.jpg" alt=""></a>
+                    <a href="product-details4.html"><div class="layer">
+                        <p>Fancy! Unique! Ecstatic! Truly a fancy dining experience!</p>
+                    </div></a>
+                </div>
+                
+                <a href="product-details4.html"><h4 class="place-name">Venissa</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Italy, Venice</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <div class="small-container">
+
+        <div class="row row-2">
+            <h2>All Places</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+                <option>Sort by newest</option>
+                <option>Sort by authenticity</option>
+                <option>Sort by budget</option>
+            </select>
+        </div>
+        
+        <div class="row row22">
+            <div class="col-4">
+                <div class="layer-container">
+                    <a href="product-details.html"><img src="images/cedros-tokyo.jpg" alt=""></a>
+                    <a href="product-details.html"><div class="layer">
+                        <p>Eat the finest sushi and beef tartare in this fancy restaurant!</p>
+                    </div></a>
+                </div>
+                <a href="product-details.html"><h4 class="place-name">Cedros Tokyo</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Japan, Tokyo</p>
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <a href="product-details2.html"><img src="images/bistrot-instinct.avif" alt=""></a>
+                    <a href="product-details2.html"><div class="layer">
+                        <p>Get the best dining experience while watching the Eiffel Tower!</p>
+                    </div></a>
+                </div>
+                
+                <a href="product-details2.html"><h4 class="place-name">Bistrot Instinct</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                
+                <p class="place-location">France, Paris</p>
+                
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <a href="product-details3.html"><img src="images/restaurant_3.jpg" alt=""></a>
+                    <a href="product-details3.html"><div class="layer">
+                        <p>Taste the unique delicacy of kalguksu and mandu in Seoul!</p>
+                    </div></a>
+                </div>
+                
+                <a href="product-details3.html"><h4 class="place-name">Hwangsaengga Kalguksu</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Korea, Seoul</p>
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <a href="product-details4.html"><img src="images/restaurant_4.jpg" alt=""></a>
+                    <a href="product-details4.html"><div class="layer">
+                        <p>Fancy! Unique! Ecstatic! Truly a fancy dining experience!</p>
+                    </div></a>
+                </div>
+                
+                <a href="product-details4.html"><h4 class="place-name">Venissa</h4></a>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Italy, Venice</p>
+            </div>
+
+        </div>
+        
+        <div class="row row22">
+            <div class="col-4">
+                <div class="layer-container">
+                    <img src="images/restaurant_5.jpg" alt="">
+                    <div class="layer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                
+                <h4 class="place-name">Es Teler 77</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Indonesia, Jakarta</p>
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <img src="images/restaurant_6_2.png" alt="">
+                    <div class="layer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                
+                <h4 class="place-name">Trattoria Pennestri</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Italy, Rome</p>
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <img src="images/restaurant_7.jpg" alt="">
+                    <div class="layer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                
+                <h4 class="place-name">Attica</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Australia, Melbourne</p>
+            </div>
+            <div class="col-4">
+                <div class="layer-container">
+                    <img src="images/restaurant_8.jpg" alt="">
+                    <div class="layer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                
+                <h4 class="place-name">Hofbräuhaus München</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p class="place-location">Germany, Bavaria</p>
+            </div>
+
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+    <!---- Footer ----->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/food_logo2.png" alt="">
+                    <p>Our Goal Is To Give Our Customer A New Experience</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Link</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul class="follow-us">
+                        <li>Facebook<i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                        <li>Twitter<i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li>Instagram<i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li>YouTube<i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 -  Edwur </p>
+        </div>
+    </div>
+    <!-- JS for toggle menu -->
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+    
+</body>
+</html>
